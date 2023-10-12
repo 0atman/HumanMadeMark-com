@@ -1,0 +1,8 @@
+[package]
+name = "phosphenecatalogue-com"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+color-eyre = "*"
+html-to-string-macro = "0.2.5"
