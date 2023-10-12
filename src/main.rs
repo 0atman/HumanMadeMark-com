@@ -4,8 +4,8 @@ use html_to_string_macro::html;
 fn template(inner: String) -> String {
     let page_style = r#"
       body {
-        font-family: monospace;
-        font-size: large;
+        font-family: courier, monospace;
+        font-size: 2rem;
         margin: 20px;
         background-color: #000000;
         padding: 10px;
@@ -19,7 +19,7 @@ fn template(inner: String) -> String {
         color: white;
       }
       .slogan {
-        font-family: cursive;
+        font-family: serif;
         font-size: x-large;
         font-weight: bold;
       }
@@ -31,6 +31,13 @@ fn template(inner: String) -> String {
         max-width: 40rem;
         line-height: 3rem;
       }
+      .titles {
+        font-size: 3rem;
+      }
+    img{
+        width:100%;
+        max-width:300px;
+    }
 "#;
     html! {
            <!DOCTYPE html>
@@ -56,10 +63,12 @@ fn template(inner: String) -> String {
 
     <body class="glow">
       <center>
+    <div class="titles">
         <a href="">"Listen"</a>"&nbsp; "
         <a href="">"Mastodon"</a>"&nbsp; "
         <a href="https://discord.gg/mCY2bBmDKZ">"Discord"</a>"&nbsp; "
         <a href="">"Patreon"</a>"&nbsp; "
+        </div>
         <br/>
         <br/>
 
@@ -81,7 +90,7 @@ fn index() -> String {
           <div class="slogan"> "We see light where others see only darkness." </div>
           <br/>
           <br/>
-          "An urban fantasy podcast of tape recordings by the curator of a secrative london-based art auction house."
+          "An urban fantasy podcast of tape recordings by the curator of a secrative London-based art auction house."
           <br/>
           <br/>
           "<i>The Phosphene Catalogue</i> is a mail-order catalogue from the 1970s, specialising in those items that cannot be sold at other auction houses: Paintings of lost origin, statues that are 'too grotesque' for public display, and books better left unread."
