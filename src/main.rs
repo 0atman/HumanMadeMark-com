@@ -41,7 +41,7 @@ fn template(inner: String) -> String {
                <link rel="icon" href="favicon.png"/>
 
                <meta charset="utf-8"/>
-                <meta name="description" content="The Phosphene Catalogue is a mail-order catalogue specialising in those items that cannot be sold at other auction houses: Paintings of lost origin, statues that are 'too grotesque' for public display, and books better left unread."/>
+                <meta name="description" content="An urban fantasy podcast of tape recordings by the curator of a secrative london-based art auction house."/>
 
                <meta content="width=device-width, initial-scale=1" name="viewport"/>
                <title>"The Phosphene Catalogue Podcast"</title>
@@ -84,7 +84,7 @@ fn index() -> String {
           "An urban fantasy podcast of tape recordings by the curator of a secrative london-based art auction house."
           <br/>
           <br/>
-          "<i>The Phosphene Catalogue</i> specialises in those items that cannot be sold at other auction houses: Paintings of lost origin, statues that are 'too grotesque' for public display, and books better left unread."
+          "<i>The Phosphene Catalogue</i> is a mail-order catalogue from the 1970s, specialising in those items that cannot be sold at other auction houses: Paintings of lost origin, statues that are 'too grotesque' for public display, and books better left unread."
       <div class="narrow">
       </div>
     <br/>
