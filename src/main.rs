@@ -4,6 +4,7 @@ use html_to_string_macro::html;
 fn template(inner: String) -> String {
     let page_style = r#"
       body {
+
         font-family: courier, monospace;
         font-size: 2rem;
         margin: 20px;
@@ -14,6 +15,10 @@ fn template(inner: String) -> String {
         //background-repeat: no-repeat;
         //background-attachment: fixed;
         //background-size: cover;
+      }
+      .justify {
+        text-align: justify;
+        text-justify: inter-word;
       }
       a, .white, h1, h2 {
         color: white;
@@ -33,6 +38,7 @@ fn template(inner: String) -> String {
       }
       .titles {
         font-size: 3rem;
+        font-weight: bold;
       }
     img{
         width:100%;
@@ -61,24 +67,26 @@ fn template(inner: String) -> String {
 
            </head>
 
-    <body class="glow">
-      <center>
+    <body>
+
+    <center>
     <div class="titles">
         <a href="">"Listen"</a>"&nbsp; "
         <a href="">"Mastodon"</a>"&nbsp; "
         <a href="https://discord.gg/mCY2bBmDKZ">"Discord"</a>"&nbsp; "
         <a href="">"Patreon"</a>"&nbsp; "
-        </div>
-        <br/>
-        <br/>
+    </div>
+    <br/>
+    <br/>
 
 
-        <a href="index.html">
+    <a href="index.html">
         <img alt="A photo of an art catelogue cover" src="logo.jpg" width="50%"/>
-        </a>
-    </center>
-           {inner}
+    </a>
 
+       {inner}
+
+    </center>
     </body>
     </html>
     }
@@ -90,16 +98,18 @@ fn index() -> String {
           <div class="slogan"> "We see light where others see only darkness." </div>
           <br/>
           <br/>
+        <div class="justify">
           "An urban fantasy podcast of tape recordings by the curator of a secrative London-based art auction house."
           <br/>
           <br/>
-          "<i>The Phosphene Catalogue</i> is a mail-order catalogue from the 1970s, specialising in those items that cannot be sold at other auction houses: Paintings of lost origin, statues that are 'too grotesque' for public display, and books better left unread."
+          "<b>The Phosphene Catalogue</b> is a mail-order catalogue from the 1970s, specialising in those items that cannot be sold at other auction houses: Paintings of lost origin, statues that are 'too grotesque' for public display, and books better left unread."
+          </div>
       <div class="narrow">
       </div>
     <br/>
     <br/>
 
-        <a href="">"Listen to the pilot here"</a>
+        <b><a href="">"Listen to the pilot here"</a></b>
         <br/>
         <br/>
     </center>
