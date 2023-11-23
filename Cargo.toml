@@ -5,4 +5,5 @@ edition = "2021"
 
 [dependencies]
 color-eyre = "*"
-html-to-string-macro = "0.2.5"
+html-node = { version = "0.4.0", features = ["typed"] }
+rstml = "*"
