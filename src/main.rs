@@ -3,7 +3,6 @@ use html_node::{
     typed::{elements::*, html},
     Node,
 };
-use rstml::node::RawText;
 
 fn template(inner: Node) -> Node {
     let page_style_tag = html! {
@@ -42,7 +41,7 @@ fn template(inner: Node) -> Node {
           }
         img{
             width:100%;
-            max-width:300px;
+            max-width:1000px;
         }
         </style>
     };
@@ -55,7 +54,7 @@ fn template(inner: Node) -> Node {
                <link rel="icon" href="favicon.png"/>
 
                <meta charset="utf-8"/>
-                <meta name="description" content="An urban fantasy podcast of tape recordings by the curator of a secrative london-based art auction house."/>
+                <meta name="description" content="An urban fantasy podcast of tape recordings by the curator of a secretive london-based art auction house."/>
 
                <meta content="width=device-width, initial-scale=1" name="viewport"/>
                <title>"The Phosphene Catalogue Podcast"</title>
@@ -80,7 +79,7 @@ fn template(inner: Node) -> Node {
                 <br/>
 
                 <a href="index.html">
-                    <img alt="A photo of an art catelogue cover" src="logo.jpg" width="50%"/>
+                    <img alt="A photo of an art catelogue cover" src="logo.png" width="50%"/>
                 </a>
 
                {inner}
@@ -90,17 +89,19 @@ fn template(inner: Node) -> Node {
     }
 }
 
-fn index() -> Node {
-    // NOTE: the widget requires https to load
-    let soundcloud_widget = html_node::html! {
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1657202067&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
+/// NOTE: the widget requires https to load
+fn soundcloud_widget() -> Node {
+    html_node::html! {
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1673705718&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
             </iframe>
             <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
             <a href="https://soundcloud.com/namtao" title="namtao" target="_blank" style="color: #cccccc; text-decoration: none;">namtao</a>
-            <a href="https://soundcloud.com/namtao/demo-the-phosphene-catalogue-theme" title="[DEMO] The Phosphene Catalogue Theme" target="_blank" style="color: #cccccc; text-decoration: none;">[DEMO] The Phosphene Catalogue Theme</a>
+            <a href="https://soundcloud.com/namtao/the-phosphene-catalogue-pilot" title="The Phosphene Catalogue [PILOT]" target="_blank" style="color: #cccccc; text-decoration: none;">The Phosphene Catalogue [PILOT]</a>
             </div>
-    };
+    }
+}
 
+fn index() -> Node {
     template(html! {
           <div class="slogan"> "We see light where others see only darkness." </div>
           <br/>
@@ -117,7 +118,7 @@ fn index() -> Node {
     <br/>
 
         <b><a href="">"Listen to the pilot here"</a></b>
-        { soundcloud_widget }
+        { soundcloud_widget() }
         <br/>
         <br/>
     })
