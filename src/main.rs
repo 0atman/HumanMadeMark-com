@@ -10,7 +10,7 @@ fn template(inner: Node) -> Node {
           body {
             text-align: center;
             font-family: courier, monospace;
-            font-size: 2rem;
+            font-size: 1rem;
             margin: 20px;
             background-color: #000000;
             padding: 10px;
@@ -33,10 +33,10 @@ fn template(inner: Node) -> Node {
           }
           h1 {
             max-width: 40rem;
-            line-height: 3rem;
+            line-height: 2rem;
           }
           .titles {
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: bold;
           }
         img{
