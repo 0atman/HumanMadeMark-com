@@ -118,6 +118,7 @@ fn index() -> Node {
     <br/>
 
         <b><a href="">"Listen to the pilot here"</a></b>
+        <br/>
         { soundcloud_widget() }
         <br/>
         <br/>
