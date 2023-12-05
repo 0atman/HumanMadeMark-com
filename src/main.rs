@@ -66,13 +66,13 @@ fn template(inner: Node) -> Node {
             <body>
 
                 <div class="titles">
-                    <a href="">Listen</a>
+                    <a href="https://www.spreaker.com/show/the-phosphene-catalogue">Listen</a>
                     <div></div>
-                    <a href="">Mastodon</a>
+                    <a href="https://masto.namtao.com/@PhospheneCatalogue">Mastodon</a>
                     <div></div>
                     <a href="https://discord.gg/mCY2bBmDKZ">Discord</a>
                     <div></div>
-                    <a href="">Patreon</a>
+                    <a href="https://www.patreon.com/PhospheneCatalogue">Patreon</a>
                 </div>
 
                 <br/>
