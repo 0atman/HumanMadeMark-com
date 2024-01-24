@@ -1,92 +1,79 @@
 use color_eyre::Report;
+#[allow(clippy::wildcard_imports)]
 use html_node::{
     typed::{elements::*, html},
     Node,
 };
 
 fn template(inner: Node) -> Node {
-    let page_style_tag = html! {
-        <style>
-          body {
-            text-align: center;
-            font-family: courier, monospace;
-            font-size: 1rem;
-            margin: 20px;
-            background-color: #000000;
-            padding: 10px;
-            color: #fff;
-          }
-          .justify {
-            text-align: justify;
-            text-justify: inter-word;
-          }
-          a, .white, h1, h2 {
-            color: white;
-          }
-          .slogan {
-            font-family: serif;
-            font-size: x-large;
-            font-weight: bold;
-          }
-          .narrow {
-             max-width: 50%;
-          }
-          h1 {
-            max-width: 40rem;
-            line-height: 2rem;
-          }
-          .titles {
-            font-size: 2rem;
-            font-weight: bold;
-          }
-        img{
-            width:100%;
-            max-width:1000px;
-        }
-        </style>
-    };
-
     html! {
+
         <!DOCTYPE html>
         <html lang="en">
             <head>
-               <meta http-equiv="x-clacks-overhead" content="GNU Terry Pratchett" />
-               <link rel="icon" href="favicon.png"/>
+                <meta http-equiv="x-clacks-overhead" content="GNU Terry Pratchett" />
+                <link rel="icon" href="favicon.png"/>
+                <script src="https://cdn.tailwindcss.com"></script>
 
-               <meta charset="utf-8"/>
-                <meta name="description" content="An urban fantasy podcast of tape recordings by the curator of a secretive london-based art auction house."/>
+            <script>
+                tailwind.config = {
+                    theme: {
+                        container: {
+                            center: true,
+                        },
+                    },
+                }
+            </script>
 
-               <meta content="width=device-width, initial-scale=1" name="viewport"/>
-               <title>"The Phosphene Catalogue Podcast"</title>
+            <meta charset="utf-8"/>
+            <meta name="description" content="An urban fantasy podcast of tape recordings by the curator of a secretive london-based art auction house."/>
 
-               { page_style_tag }
+            <meta content="width=device-width, initial-scale=1" name="viewport"/>
+            <title>"The Phosphene Catalogue Podcast"</title>
 
             </head>
 
-            <body>
+                <body class="bg-black text-white font-['courier']">
 
-                <div class="titles">
-                    <a href="https://www.spreaker.com/show/the-phosphene-catalogue">Listen</a>
-                    <div></div>
-                    <a href="https://open.spotify.com/show/5XPmpYIlK2nYOfINCzlYUu?si=00798415bfff4b9e">Spotify</a>
-                    <div></div>
-                    <a href="https://www.spreaker.com/show/6029902/episodes/feed">RSS</a>
-                    <div></div>
-                    <a href="https://masto.namtao.com/@PhospheneCatalogue">Mastodon</a>
-                    <div></div>
-                    <a href="https://discord.gg/mCY2bBmDKZ">Discord</a>
-                    <div></div>
-                    <a href="https://www.patreon.com/PhospheneCatalogue">Patreon</a>
-                </div>
+                    <nav class="flex items-center justify-between flex-wrap bg-black-500 p-6">
+                        <div class="flex items-center flex-shrink-0 text-white mr-6">
+                            <span class="font-semibold text-xl tracking-tight">The Phosphene Catalogue</span>
+                        </div>
+                        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                            <div class="text-xl lg:flex-grow">
+                                <a href="https://www.spreaker.com/show/the-phosphene-catalogue" class="block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                                    Listen
+                                </a>
+                                <a href="https://open.spotify.com/show/5XPmpYIlK2nYOfINCzlYUu?si=00798415bfff4b9e" class="blocklg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                                    Spotify
+                                </a>
+                                <a href="https://www.spreaker.com/show/6029902/episodes/feed" class="block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                                    RSS
+                                </a>
+                                <a href="https://masto.namtao.com/@PhospheneCatalogue" class="block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                                    Mastodon
+                                </a>
+                                <a href="https://discord.gg/mCY2bBmDKZ" class="block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                                    Discord
+                                </a>
+                                <a href="https://www.patreon.com/PhospheneCatalogue" class="block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                                    Patreon
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
 
-                <br/>
-                <br/>
+                    <div class="border-black border-8 container mx-auto">
 
-                <a href="index.html">
-                    <img alt="A photo of an art catelogue cover" src="logo.png" width="50%"/>
-                </a>
+                        <div class="flex w-full justify-center">
+                            <a href="index.html">
+                                <img class="w-1/2" alt="A photo of an art catelogue cover" src="logo.png" />
+                            </a>
+                        </div>
 
-               {inner}
+                            {inner}
+
+                    </div>
 
             </body>
         </html>
@@ -96,18 +83,15 @@ fn template(inner: Node) -> Node {
 /// NOTE: the widget requires https to load
 fn soundcloud_widget() -> Node {
     html_node::html! {
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1673705718&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
-            </iframe>
-            <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-            <a href="https://soundcloud.com/namtao" title="namtao" target="_blank" style="color: #cccccc; text-decoration: none;">namtao</a>
-            <a href="https://soundcloud.com/namtao/the-phosphene-catalogue-pilot" title="The Phosphene Catalogue [PILOT]" target="_blank" style="color: #cccccc; text-decoration: none;">The Phosphene Catalogue [PILOT]</a>
-            </div>
+        <iframe width="50%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1726180263&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+        </iframe>
     }
 }
 
 fn index() -> Node {
     template(html! {
           <div class="slogan"> "We see light where others see only darkness." </div>
+
           <br/>
           <br/>
         <div class="justify">
