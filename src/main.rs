@@ -36,7 +36,7 @@ fn template(inner: Node) -> Node {
 
             </head>
 
-                <body class="bg-black text-white font-mono">
+                <body class="bg-black text-white font-mono text-sm md:text-xl">
 
                     <nav class="flex items-center justify-between flex-wrap bg-black-500 p-6">
                         <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -73,9 +73,7 @@ fn template(inner: Node) -> Node {
                     <div class="border-black border-8 container mx-auto">
 
                         <div class="flex w-full justify-center">
-                            <a href="index.html">
-                                <img class="w-1/2" alt="A photo of an art catelogue cover" src="logo.png" />
-                            </a>
+                            <img class="w-1/2" alt="A photo of an art catelogue cover" src="logo.png" />
                         </div>
 
                             {inner}
