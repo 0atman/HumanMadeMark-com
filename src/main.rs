@@ -103,7 +103,7 @@ fn index() -> Node {
           "An urban fantasy podcast of tape recordings by the curator of a secretive London-based art auction house."
           <br/>
           <br/>
-          <b>The Phosphene Catalogue</b> is a 1970s mail-order catalogue, specialising in those items that cannot be sold at other auction houses: Paintings of lost origin, statues that are "too grotesque" for public display, and books better left unread...
+          The Phosphene Catalogue is a 1970s mail-order catalogue, specialising in those items that cannot be sold at other auction houses: Paintings of lost origin, statues that are "too grotesque" for public display, and books better left unread...
           </div>
       <div class="narrow">
       </div>
