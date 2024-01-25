@@ -21,7 +21,10 @@ fn template(inner: Node) -> Node {
                         container: {
                             center: true,
                         },
-                    },
+                        fontFamily: {
+                            "mono": "courier, monospace",
+                        }
+                    }
                 }
             </script>
 
@@ -33,7 +36,7 @@ fn template(inner: Node) -> Node {
 
             </head>
 
-                <body class="bg-black text-white font-['courier']">
+                <body class="bg-black text-white font-mono">
 
                     <nav class="flex items-center justify-between flex-wrap bg-black-500 p-6">
                         <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -109,7 +112,7 @@ fn index() -> Node {
     <br/>
     <br/>
 
-        <b><a href="">"Listen to the pilot here"</a></b>
+        <b><a href="">"Listen to the first issue here"</a></b>
         <br/>
         { soundcloud_widget() }
         <br/>
