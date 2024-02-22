@@ -79,6 +79,8 @@ fn template(inner: Node) -> Node {
                             <img class="w-1/2" alt="A photo of an art catelogue cover" src="logo.png" />
                         </div>
 
+                            <br/>
+                            <br/>
                             {inner}
 
                     </div>
