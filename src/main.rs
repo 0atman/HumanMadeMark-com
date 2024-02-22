@@ -62,6 +62,9 @@ fn template(inner: Node) -> Node {
                                 <a href="https://www.teepublic.com/user/the-phosphene-catalogue" class="block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
                                     Store
                                 </a>
+                                <a href="https://soundcloud.com/namtao/sets/the-phosphene-catalogue-music" class="block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                                    Music
+                                </a>
 
                                 <a href="https://www.patreon.com/PhospheneCatalogue" class="block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
                                     Patreon
