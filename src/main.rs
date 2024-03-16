@@ -91,11 +91,10 @@ fn template(inner: Node) -> Node {
 }
 
 /// NOTE: the widget requires https to load
-fn soundcloud_widget() -> Node {
+fn widget() -> Node {
     html_node::html! {
-        <iframe width="50%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1726180263&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-        </iframe>
-    }
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/y3wVvDbJHrU?si=19zRXxXpwnAGuB0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        }
 }
 
 fn index() -> Node {
@@ -115,9 +114,9 @@ fn index() -> Node {
     <br/>
     <br/>
 
-        <b><a href="">"Listen to the first issue here"</a></b>
+        <b><a href="https://www.youtube.com/watch?v=y3wVvDbJHrU">"Listen to the first issue here"</a></b>
         <br/>
-        { soundcloud_widget() }
+        { widget() }
         <br/>
         <br/>
     })
