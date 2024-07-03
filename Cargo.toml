@@ -1,11 +1,11 @@
 [package]
-name = "phosphenecatalogue-com"
+name = "humanamademark-com"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
 color-eyre = "*"
-html-node = { version = "0.4.0", features = ["typed"] }
+html-node = { version = "0.5.0", features = ["typed"] }
 rstml = "*"
 
 [lints.rust]
