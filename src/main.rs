@@ -84,8 +84,8 @@ fn template(inner: Node) -> Node {
 /// NOTE: the widget requires https to load
 fn widget() -> Node {
     html_node::html! {
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/y3wVvDbJHrU?si=19zRXxXpwnAGuB0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        }
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qjPAWy_2FL0?si=0BvqUqC3kZpO1Lpt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    }
 }
 
 fn index() -> Node {
@@ -169,6 +169,23 @@ fn index() -> Node {
     <br/>
     <br/>
     "I *like* that you tried hard, that's part of the experience."
+    <br/>
+    <br/>
+    <h2> <b>Credits</b> </h2>
+        "
+
+Logo based on \"Human\" by JunGSa from "
+    <a href="https://thenounproject.com/browse/icons/term/human/" target="_blank" title="Human Icons">Noun Project</a>" (CC BY 3.0)
+
+
+And \"seed\" by Adrian Syauqi from "
+    <a href="https://thenounproject.com/browse/icons/term/seed/" target="_blank" title="seed Icons">Noun Project</a>" (CC BY 3.0)
+
+"
+
+    <br/>
+    "Special thanks to everyone who workshopped the logo with me, especially super patron supporter Andrew Jackson. Andrew, I should be paying YOU!"
+    <br/>
     <br/>
     <br/>
     <br/>
