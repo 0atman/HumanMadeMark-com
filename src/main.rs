@@ -45,22 +45,22 @@ fn template(inner: Node) -> Node {
                         </div>
                         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                             <div class="text-xl lg:flex-grow">
-                                <a href="index.html#about" class="block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                                <a href="index.html#about" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
                                     About
                                 </a>
-                                <a href="black-logo.png" class="block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                                <a href="black-logo.png" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
                                     Black.png
                                 </a>
-                                <a href="white-logo.png" class="block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                                <a href="white-logo.png" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
                                     White.png
                                 </a>
-                                <a href="black-logo.svg" class="block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                                <a href="black-logo.svg" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
                                    Black.svg
                                 </a>
-                                <a href="white-logo.svg" class="block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                                <a href="white-logo.svg" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
                                     White.svg
                                 </a>
-                                <a href="https://github.com/0atman/HumanMadeMark-com" class="block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                                <a href="https://github.com/0atman/HumanMadeMark-com" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
                                     Github
                                 </a>
                             </div>
@@ -119,7 +119,7 @@ fn index() -> Node {
     <br/>
     <br/>
 
-            <b><a href="https://www.youtube.com/watch?v=y3wVvDbJHrU">"Watch my short video here, or read on."</a></b>
+            <b><a class="underline" href="https://www.youtube.com/watch?v=y3wVvDbJHrU">"Watch my short video here, or read on."</a></b>
             <br/>
             { widget() }
             <br/>
@@ -175,17 +175,17 @@ fn index() -> Node {
     <br/>
     <br/>
     <h2> <b>Credits</b> </h2>
-        "
+    <ul>
+        <li>
+            "Logo based on \"Human\" by JunGSa from "
+            <a class="underline" href="https://thenounproject.com/browse/icons/term/human/" target="_blank" title="Human Icons">Noun Project</a>
+        </li>
 
-Logo based on \"Human\" by JunGSa from "
-    <a href="https://thenounproject.com/browse/icons/term/human/" target="_blank" title="Human Icons">Noun Project</a>" (CC BY 3.0)
-
-
-And \"seed\" by Adrian Syauqi from "
-    <a href="https://thenounproject.com/browse/icons/term/seed/" target="_blank" title="seed Icons">Noun Project</a>" (CC BY 3.0)
-
-"
-
+        <li>
+            "And \"seed\" by Adrian Syauqi from "
+        <a class="underline" href="https://thenounproject.com/browse/icons/term/seed/" target="_blank" title="seed Icons">Noun Project</a>
+        </li>
+    </ul>
     <br/>
     "Special thanks to everyone who workshopped the logo with me, especially super patron supporter Andrew Jackson. Andrew, I should be paying YOU!"
     <br/>
