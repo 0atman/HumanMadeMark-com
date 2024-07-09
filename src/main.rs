@@ -60,6 +60,9 @@ fn template(inner: Node) -> Node {
                                 <a href="white-logo.svg" class="block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
                                     White.svg
                                 </a>
+                                <a href="https://github.com/0atman/HumanMadeMark-com" class="block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                                    Github
+                                </a>
                             </div>
                         </div>
                     </nav>
