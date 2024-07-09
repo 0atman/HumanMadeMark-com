@@ -33,7 +33,7 @@ fn template(inner: Node) -> Node {
             <meta name="description" content="An urban fantasy podcast of tape recordings by the curator of a secretive london-based art auction house."/>
 
             <meta content="width=device-width, initial-scale=1" name="viewport"/>
-            <title>"The Humanmade Mark"</title>
+            <title>"The Human Made Mark"</title>
 
             </head>
 
@@ -41,7 +41,7 @@ fn template(inner: Node) -> Node {
 
                     <nav class="flex items-center justify-between flex-wrap bg-black-500 p-6">
                         <div class="flex items-center flex-shrink-0 text-white mr-6">
-                            <span class="font-semibold text-xl tracking-tight">The Humanmade Mark</span>
+                            <span class="font-semibold text-xl tracking-tight">The Human Made Mark</span>
                         </div>
                         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                             <div class="text-xl lg:flex-grow">
@@ -70,7 +70,7 @@ fn template(inner: Node) -> Node {
                     <div class="border-black border-8 container mx-auto">
 
                         <div class="flex w-full justify-center">
-                            <img class="w-1/2" alt="A logo of a human with a seed germinating in their head, with the words 'Humanmade' next to it, along with the website humanmademark.com underneath." src="white-logo.svg" />
+                            <img class="w-1/2" alt="A logo of a human with a seed germinating in their head, with the words 'Human Made' next to it, along with the website humanmademark.com underneath." src="white-logo.svg" />
                         </div>
 
                             <br/>
@@ -89,7 +89,7 @@ fn widget() -> Node {
     html_node::html! {
         //<iframe width="560" height="315" src="https://www.youtube.com/embed/qjPAWy_2FL0?si=0BvqUqC3kZpO1Lpt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <img class="w-1/2" alt="A logo of a human with a seed germinating in their head, with the words 'Humanmade' next to it, along with the website humanmademark.com underneath." src="video.png" />
+        <img class="w-1/2" src="video.png" />
     }
 }
 
@@ -105,7 +105,7 @@ fn index() -> Node {
     "Hi friends, I'd like to introduce you to a small project I've made."
     <br/>
     <br/>
-    "The "<i>Humanmade</i>" mark, here, is something I will be attaching to any works of mine that were mostly made by me or my friends, not by generative tools like GPT. I've built this website to freely share the high-resolution black or white versions of the logo available with you, which you can download and attach to your own projects if you'd like to make the same statement."
+    "The "<i>Human Made</i>" mark, here, is something I will be attaching to any works of mine that were mostly made by me or my friends, not by generative tools like GPT. I've built this website to freely share the high-resolution black or white versions of the logo available with you, which you can download and attach to your own projects if you'd like to make the same statement."
 
     <br/>
     "I've made the following video to try to make my reasons for making this clear, but it's simple:"
@@ -195,7 +195,7 @@ fn index() -> Node {
     <br/>
     <br/>
     <br/>
-    "Humanmade is a NAMTAO production, made with <3 in 2024".
+    "Human Made is a NAMTAO production, made with <3 in 2024".
         })
 }
 
