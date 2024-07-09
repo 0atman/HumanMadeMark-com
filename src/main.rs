@@ -87,7 +87,9 @@ fn template(inner: Node) -> Node {
 /// NOTE: the widget requires https to load
 fn widget() -> Node {
     html_node::html! {
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/qjPAWy_2FL0?si=0BvqUqC3kZpO1Lpt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        //<iframe width="560" height="315" src="https://www.youtube.com/embed/qjPAWy_2FL0?si=0BvqUqC3kZpO1Lpt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <img class="w-1/2" alt="A logo of a human with a seed germinating in their head, with the words 'Humanmade' next to it, along with the website humanmademark.com underneath." src="video.png" />
     }
 }
 
@@ -119,10 +121,11 @@ fn index() -> Node {
     <br/>
     <br/>
 
-            <b><a class="underline" href="https://www.youtube.com/watch?v=y3wVvDbJHrU">"Watch my short video here, or read on."</a></b>
-            <br/>
-            { widget() }
-            <br/>
+            <b>
+                <a class="underline" href="https://www.youtube.com/watch?v=y3wVvDbJHrU">Watch my short video here, or read on.
+                { widget() }
+                </a>
+            </b>
             <br/>
     <h1 id="about"><b>About</b></h1>
     "I'm Tris, I'm a writer and producer of fast, technical videos, and audiofiction and music."
