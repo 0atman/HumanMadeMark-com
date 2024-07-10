@@ -124,7 +124,7 @@ fn index() -> Node {
     <br/>
 
             <b>
-                <a class="underline" href="https://www.youtube.com/watch?v=y3wVvDbJHrU">Watch my short video here, or read on.
+                <a class="underline" href="https://www.youtube.com/watch?v=qjPAWy_2FL0?">Watch my short video here, or read on.
                 { widget() }
                 </a>
             </b>
