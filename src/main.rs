@@ -30,7 +30,9 @@ fn template(inner: Node) -> Node {
             </script>
 
             <meta charset="utf-8"/>
-            <meta name="description" content="An urban fantasy podcast of tape recordings by the curator of a secretive london-based art auction house."/>
+            <meta name="description" content="When you see this logo on any artwork, whether painting, poetry, or prose, you know that it was made by a human just like you."/>
+
+
 
             <meta content="width=device-width, initial-scale=1" name="viewport"/>
             <title>"The Human Made Mark"</title>
