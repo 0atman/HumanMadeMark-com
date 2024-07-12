@@ -35,7 +35,7 @@ fn template(inner: Node) -> Node {
 
 
             <meta content="width=device-width, initial-scale=1" name="viewport"/>
-            <title>"The Human Made Mark"</title>
+            <title class="text-4xl" >"The Human Made Mark"</title>
 
             </head>
 
@@ -97,26 +97,26 @@ fn widget() -> Node {
 
 fn index() -> Node {
     template(html! {
-              <div class="slogan"><b> "When you see this logo on any artwork, whether painting, poetry, or prose, you know that it was made by a human just like you." </b></div>
+              <h2 class="slogan"><b class="text-2xl" > "When you see this logo on any artwork, whether painting, poetry, or prose, you know that it was made by a human just like you." </b></h2>
 
-              <br/>
               <br/>
             <div class="justify">
 
 
-    "Hi friends, I'd like to introduce you to a small project I've made."
+    "Hi friends, "<a class="underline" href="#about">"I'm Tris"</a>", I'd like to introduce you to a small project I've made."
     <br/>
     <br/>
-    "The "<i>Human Made</i>" mark, here, is something I will be attaching to any works of mine that were mostly made by me or my friends, not by generative tools like GPT. I've built this website to freely share the high-resolution black or white versions of the logo available with you, which you can download and attach to your own projects if you'd like to make the same statement."
+    "The "<i>Human Made</i>" mark is something I will be attaching to any works of mine that were mostly made by me or my friends, not by generative tools like GPT. I've built this website to freely share the high-resolution black or white versions of the logo available with you, which you can download and attach to your own projects if you'd like to make the same statement."
 
     <br/>
     "I've made the following video to try to make my reasons for making this clear, but it's simple:"
 
     <br/>
     <br/>
-    <b>"I don't hate AIs,"</b>
-    <br/>
-    <b>"I love humans!"</b>
+    <ul class="list-decimal">
+    <li><b>"I don't hate AIs,"</b></li>
+    <li><b>"I love humans!"</b></li>
+    </ul>
         </div>
           <div class="narrow">
           </div>
@@ -129,8 +129,8 @@ fn index() -> Node {
                 </a>
             </b>
             <br/>
-    <h1 id="about"><b>About</b></h1>
-    "I'm Tris, I'm a writer and producer of fast, technical videos, and audiofiction and music."
+    <h1 class="text-4xl" id="about"><b>About</b></h1>
+    "I'm Tris, I'm a writer and producer of "<a class="underline" href="http://noboilerplate.org">"fast, technical videos"</a>", and "<a class="underline" href="https://namtao.com">"audiofiction and music."</a>
     <br/>
     "My first career was as a web developer, doing production on the side for 15 years, but in 2022 I accidentally become entirely self-employed thanks to the surprising success of my YouTube channel, No Boilerplate."
     <br/>
@@ -154,7 +154,7 @@ fn index() -> Node {
     <br/>
 
     "I don't need 100% human made, I perhaps need 90% human made. Three example may make my thinking clearer:"
-    <ul>
+    <ul class="list-decimal">
     <li>
         "Using, say, chatgpt as a rhyming dictionary feels fine, but writing whole verses of your poem doesn't."
     </li>
@@ -173,13 +173,13 @@ fn index() -> Node {
     <br/>
     "I love knowing a human made the artwork I'm consuming."
     <br/>
-    "There's *something* there, something transcendent and magical."
+    "There's "<i>something</i>" there, something transcendent and magical."
     <br/>
     <br/>
-    "I *like* that you tried hard, that's part of the experience."
+    "I "<i>like</i>" that you tried hard, that's part of the experience."
     <br/>
     <br/>
-    <h2> <b>Credits</b> </h2>
+    <h2 class="text-2xl" > <b>Credits</b> </h2>
     <ul>
         <li>
             "Logo based on \"Human\" by JunGSa from "
@@ -197,7 +197,7 @@ fn index() -> Node {
     <br/>
     <br/>
     <br/>
-    "Human Made is a NAMTAO production, made with <3 in 2024".
+    <p class="text-xs">"Human Made is a NAMTAO production, made with <3 in 2024"</p>
         })
 }
 
