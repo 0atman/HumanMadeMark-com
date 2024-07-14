@@ -32,8 +32,6 @@ fn template(inner: Node) -> Node {
             <meta charset="utf-8"/>
             <meta name="description" content="When you see this logo on any artwork, whether painting, poetry, or prose, you know that it was made by a human just like you."/>
 
-
-
             <meta content="width=device-width, initial-scale=1" name="viewport"/>
             <title class="text-4xl" >"The Human Made Mark"</title>
 
@@ -50,17 +48,8 @@ fn template(inner: Node) -> Node {
                                 <a href="index.html#about" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
                                     About
                                 </a>
-                                <a href="black-logo.png" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
-                                    Black.png
-                                </a>
-                                <a href="white-logo.png" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
-                                    White.png
-                                </a>
-                                <a href="black-logo.svg" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
-                                   Black.svg
-                                </a>
-                                <a href="white-logo.svg" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
-                                    White.svg
+                                <a href="#downloads" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                                    Downloads
                                 </a>
                                 <a href="https://github.com/0atman/HumanMadeMark-com" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
                                     Github
@@ -71,12 +60,6 @@ fn template(inner: Node) -> Node {
 
                     <div class="border-black border-8 container mx-auto">
 
-                        <div class="flex w-full justify-center">
-                            <img class="w-1/2" alt="A logo of a human with a seed germinating in their head, with the words 'Human Made' next to it, along with the website humanmademark.com underneath." src="white-logo.svg" />
-                        </div>
-
-                            <br/>
-                            <br/>
                             {inner}
 
                     </div>
@@ -89,116 +72,192 @@ fn template(inner: Node) -> Node {
 /// NOTE: the widget requires https to load
 fn widget() -> Node {
     html_node::html! {
-        //<iframe width="560" height="315" src="https://www.youtube.com/embed/qjPAWy_2FL0?si=0BvqUqC3kZpO1Lpt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
         <img class="w-1/2" src="video.png" />
     }
 }
 
 fn index() -> Node {
-    template(html! {
-              <h2 class="slogan"><b class="text-2xl" > "When you see this logo on any artwork, whether painting, poetry, or prose, you know that it was made by a human just like you." </b></h2>
-
-              <br/>
-            <div class="justify">
-
-
-    "Hi friends, "<a class="underline" href="#about">"I'm Tris"</a>", I'd like to introduce you to a small project I've made."
-    <br/>
-    <br/>
-    "The "<i>Human Made</i>" mark is something I will be attaching to any works of mine that were mostly made by me or my friends, not by generative tools like GPT. I've built this website to freely share the high-resolution black or white versions of the logo available with you, which you can download and attach to your own projects if you'd like to make the same statement."
-
-    <br/>
-    "I've made the following video to try to make my reasons for making this clear, but it's simple:"
-
-    <br/>
-    <br/>
-    <ul class="list-decimal">
-    <li><b>"I don't hate AIs,"</b></li>
-    <li><b>"I love humans!"</b></li>
-    </ul>
+    let heading = html! {
+        <div class="flex w-full justify-center">
+            <img class="w-1/2" alt="A logo of a human with a seed germinating in their head, with the words 'Human Made' next to it, along with the website humanmademark.com underneath." src="white-logo.svg" />
         </div>
-          <div class="narrow">
-          </div>
-    <br/>
-    <br/>
+        <br/>
+        <br/>
+        <h2 class="slogan"><b class="text-2xl" > "When you see this logo on any artwork, whether painting, poetry, or prose, you know that it was made by a human just like you." </b></h2>
+    };
 
-            <b>
-                <a class="underline" href="https://www.youtube.com/watch?v=qjPAWy_2FL0?">Watch my short video here, or read on.
+    let intro = html! {
+        "Hi friends, "<a class="underline" href="#about">"I'm Tris"</a>", I'd like to introduce you to a small project I've made."
+        <br/>
+        <br/>
+        "The "<i>Human Made</i>" mark is something I will be attaching to any works of mine that were mostly made by me or my friends, not by generative tools like GPT. I've built this website to freely share the high-resolution black or white versions of the logo available with you, which you can download and attach to your own projects if you'd like to make the same statement."
+        <br/>
+        "I've made the following video to try to make my reasons for making this clear, but it's simple:"
+        <br/>
+        <br/>
+        <ul class="list-decimal">
+            <li><b>"I don't hate AIs,"</b></li>
+            <li><b>"I love humans!"</b></li>
+        </ul>
+        <br/>
+        <br/>
+        <b>
+            <a class="underline" href="https://www.youtube.com/watch?v=qjPAWy_2FL0?">Watch my short video here, or read on.
                 { widget() }
+            </a>
+        </b>
+    };
+
+    let sect1 = html! {
+        <h1 class="text-4xl" id="about"><b>About</b></h1>
+        "I'm Tris, I'm a writer and producer of "<a class="underline" href="http://noboilerplate.org">"fast, technical videos"</a>", and "<a class="underline" href="https://namtao.com">"audiofiction and music."</a>
+        <br/>
+        "My first career was as a web developer, doing production on the side for 15 years, but in 2022 I accidentally become entirely self-employed thanks to the surprising success of my YouTube channel, No Boilerplate."
+        <br/>
+        <br/>
+        "At heart I'm still a software developer, I'll re-use 100 libraries to avoid writing 10 lines of code - standing on the shoulders of giants is the only way I know how I get around."
+        <br/>
+        "But I've looked for a way to mark my videos and stories as being made by humans, not AI, and I can't find one that works in exactly the way I want."
+        <br/>
+        "I don't want something that says 'NO AI USED', signposts that are negative and judgemental, nor a '100% human made' guarantee - what would that even MEAN these days?"
+        <br/>
+        "I want a positive mark."
+        <br/>
+        <br/>
+        "I have multiple issues with the options I've seen so far, from having multiple logos (which is confusing) to the fixation on AI being inherently evil (this will not always be the case)."
+        <br/>
+        "My root concern with these methods is that they are negative. `AI = bad`.
+        But I think the correct way to present this is `human = good`."
+        <br/>
+        <br/>
+        "I don't need 100% human made, I perhaps need 90% human made. Three example may make my thinking clearer:"
+        <ul class="list-decimal">
+            <li>
+                "Using, say, chatgpt as a rhyming dictionary feels fine, but writing whole verses of your poem doesn't."
+            </li>
+            <li>
+                "Using DALL-E to start brainstorming with 100 generated views of birds sitting on telephone lines seems fine, but getting it to paint large sections of your artwork doesn't."
+            </li>
+            <li>
+                "Asking a text generator to give you 10 happy-sounding synonyms for despair sparks joy in me, but asking it to write your anti-trancendentalist masterpiece does not."
+            </li>
+        </ul>
+        <br/>
+        "Using these tools to make more of the artwork you want is valid, but you're not a creator, you're still a consumer. I'm not sure exactly what 'too much AI' is, but just like your audience, I'll know it when I see it."
+        <br/>
+        <br/>
+        "I love knowing a human made the artwork I'm consuming."
+        <br/>
+        "There's "<i>something</i>" there, something transcendent and magical."
+        <br/>
+        <br/>
+        "I "<i>like</i>" that you tried hard, that's part of the experience."
+    };
+
+    let sect2 = html! {
+        <h2 id="downloads" class="text-2xl"><b>Downloads</b></h2>
+
+        <h3 class="text-l"><b>White</b></h3>
+        <ul class="list-disc">
+            <li>
+                <a href="white-logo.png" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    white-logo.png
                 </a>
-            </b>
-            <br/>
-    <h1 class="text-4xl" id="about"><b>About</b></h1>
-    "I'm Tris, I'm a writer and producer of "<a class="underline" href="http://noboilerplate.org">"fast, technical videos"</a>", and "<a class="underline" href="https://namtao.com">"audiofiction and music."</a>
-    <br/>
-    "My first career was as a web developer, doing production on the side for 15 years, but in 2022 I accidentally become entirely self-employed thanks to the surprising success of my YouTube channel, No Boilerplate."
-    <br/>
-    <br/>
-    "
-    At heart I'm still a software developer, I'll re-use 100 libraries to avoid writing 10 lines of code - standing on the shoulders of giants is the only way I know how I get around."
-    <br/>
-    "But I've looked for a way to mark my videos and stories as being made by humans, not AI, and I can't find one that works in exactly the way I want."
-    <br/>
-    "I don't want something that says 'NO AI USED', signposts that are negative and judgemental, nor a '100% human made' guarantee - what would that even MEAN these days?"
+            </li>
+            <li>
+                <a href="white-logo.svg" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    white-logo.svg
+                </a>
+            </li>
+            <li>
+                <a href="white-logo-square.png" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    white-logo-square.png
+                </a>
+            </li>
+            <li>
+                <a href="white-logo-square.svg" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    white-logo-square.svg
+                </a>
+            </li>
+            </ul>
+
+            <h3 class="text-l"><b>Black</b></h3>
+            <ul class="list-disc">
+            <li>
+                <a href="black-logo.svg" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    black-logo.svg
+                </a>
+            </li>
+            <li>
+                <a href="black-logo.png" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    black-logo.png
+                </a>
+            </li>
+            <li>
+                <a href="black-logo-square.png" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    black-logo-square.png
+                </a>
+            </li>
+            <li>
+                <a href="black-logo-square.svg" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    black-logo-square.svg
+                </a>
+            </li>
+        </ul>
+
+    };
+
+    let credits = html! {
+        <h2 class="text-2xl" > <b>Credits</b> </h2>
+        <ul class="list-disc">
+            <li>
+                "Logo based on \"Human\" by JunGSa from "
+                <a class="underline" href="https://thenounproject.com/browse/icons/term/human/" target="_blank" title="Human Icons">Noun Project</a>
+            </li>
+            <li>
+                "And \"seed\" by Adrian Syauqi from "
+            <a class="underline" href="https://thenounproject.com/browse/icons/term/seed/" target="_blank" title="seed Icons">Noun Project</a>
+            </li>
+        </ul>
         <br/>
-    "I want a positive mark."
+        "Special thanks to everyone who workshopped the logo with me, especially super patron supporter Andrew Jackson. Andrew, I should be paying YOU!"
+    };
+
+    let footer = html! {
         <br/>
         <br/>
-    "I have multiple issues with the options I've seen so far, from having multiple logos (which is confusing) to the fixation on AI being inherently evil (this will not always be the case)."
-    <br/>
-    "My root concern with these methods is that they are negative. `AI = bad`.
-    But I think the correct way to present this is `human = good`."
+        <br/>
+        <br/>
+        <p class="text-xs">"Human Made is a NAMTAO production, made with <3 in 2024"</p>
+    };
 
-    <br/>
-    <br/>
+    page(heading, intro, sect1, sect2, credits, footer)
+}
 
-    "I don't need 100% human made, I perhaps need 90% human made. Three example may make my thinking clearer:"
-    <ul class="list-decimal">
-    <li>
-        "Using, say, chatgpt as a rhyming dictionary feels fine, but writing whole verses of your poem doesn't."
-    </li>
-    <li>
-        "Using DALL-E to start brainstorming with 100 generated views of birds sitting on telephone lines seems fine, but getting it to paint large sections of your artwork doesn't."
-    </li>
-    <li>
-        "Asking a text generator to give you 10 happy-sounding synonyms for despair sparks joy in me, but asking it to write your anti-trancendentalist masterpiece does not."
-    </li>
-    </ul>
-
-    <br/>
-
-    "Using these tools to make more of the artwork you want is valid, but you're not a creator, you're still a consumer. I'm not sure exactly what 'too much AI' is, but just like your audience, I'll know it when I see it."
-    <br/>
-    <br/>
-    "I love knowing a human made the artwork I'm consuming."
-    <br/>
-    "There's "<i>something</i>" there, something transcendent and magical."
-    <br/>
-    <br/>
-    "I "<i>like</i>" that you tried hard, that's part of the experience."
-    <br/>
-    <br/>
-    <h2 class="text-2xl" > <b>Credits</b> </h2>
-    <ul>
-        <li>
-            "Logo based on \"Human\" by JunGSa from "
-            <a class="underline" href="https://thenounproject.com/browse/icons/term/human/" target="_blank" title="Human Icons">Noun Project</a>
-        </li>
-
-        <li>
-            "And \"seed\" by Adrian Syauqi from "
-        <a class="underline" href="https://thenounproject.com/browse/icons/term/seed/" target="_blank" title="seed Icons">Noun Project</a>
-        </li>
-    </ul>
-    <br/>
-    "Special thanks to everyone who workshopped the logo with me, especially super patron supporter Andrew Jackson. Andrew, I should be paying YOU!"
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <p class="text-xs">"Human Made is a NAMTAO production, made with <3 in 2024"</p>
-        })
+fn page(heading: Node, intro: Node, sect1: Node, sect2: Node, credits: Node, footer: Node) -> Node {
+    template(html! {
+        { heading }
+        <br/>
+        <br/>
+        <br/>
+        { intro }
+        <br/>
+        <br/>
+        <br/>
+        { sect1 }
+        <br/>
+        <br/>
+        <br/>
+        { sect2 }
+        <br/>
+        <br/>
+        <br/>
+        { credits }
+        <br/>
+        <br/>
+        <br/>
+        { footer }
+    })
 }
 
 type Router<'a> = Vec<(&'a str, fn() -> Node)>;
