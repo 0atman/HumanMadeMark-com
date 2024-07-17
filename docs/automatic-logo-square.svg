@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="939px" height="939px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <defs>
+        <style>
+            svg {
+                background-color: white;
+                stroke: black;
+                color-scheme:light dark;
+            }
+            path {
+                fill: black;
+            }
+            @media (prefers-color-scheme:dark) {
+                svg {
+                    background-color: black;
+                    stroke: white;
+                }
+                path {
+                    fill: white;
+                }
+            }
+        </style>
+    </defs>
     <g id="Layer-1" serif:id="Layer 1" transform="matrix(1,0,0,1,-423.823,-610.791)">
         <g id="g2-9-3-6-3-61-5-6-9" transform="matrix(3.5728,0,0,3.5728,1098.12,1751.89)">
             <g id="g3-6-5-4-22-3-2-5">
@@ -12,7 +33,7 @@
         <g transform="matrix(1.36934,0,0,1.36935,-945.973,527.015)">
             <path d="M1686.06,71.172L1686.06,736.911C1686.06,742.43 1681.58,746.904 1676.06,746.904L1010.33,746.904C1004.81,746.904 1000.33,742.43 1000.33,736.911L1000.33,71.172C1000.33,65.653 1004.81,61.179 1010.33,61.179L1676.06,61.179C1681.58,61.179 1686.06,65.653 1686.06,71.172ZM1666.07,81.166L1020.32,81.166L1020.32,726.918L1666.07,726.918L1666.07,81.166Z"/>
         </g>
-        <circle id="path3-6-9-9-7-0" cx="893.36" cy="1081.24" r="297.167" style="fill:none;stroke:black;stroke-width:31.29px;"/>
+        <circle id="path3-6-9-9-7-0" cx="893.36" cy="1081.24" r="297.167" style="fill:none;stroke-width:31.29px;"/>
         <g id="g6" transform="matrix(3.61033,0,0,3.61033,588.284,688.059)">
             <g id="g3">
                 <g id="g61" serif:id="g6">
