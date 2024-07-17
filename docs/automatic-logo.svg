@@ -13,15 +13,33 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   xmlns:svg="http://www.w3.org/2000/svg">
+   <defs>
+        <style>
+            svg {
+                background-color: white;
+                stroke: black;
+                color-scheme:light dark;
+            }
+            path {
+                fill: black;
+            }
+            @media (prefers-color-scheme:dark) {
+                svg {
+                    background-color: black;
+                    stroke: white;
+                }
+                path {
+                    fill: white;
+                }
+            }
+        </style>
+    </defs><sodipodi:namedview
      id="namedview1"
-     pagecolor="#969696"
-     bordercolor="#000000"
      borderopacity="0.25"
      inkscape:showpageshadow="true"
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="true"
-     inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      borderlayer="true"
      showgrid="false"
@@ -42,9 +60,7 @@
        originy="-161.60503"
        spacingx="4.9999999"
        spacingy="4.9999999"
-       empcolor="#0099e5"
        empopacity="0.30196078"
-       color="#0099e5"
        opacity="0.14901961"
        empspacing="5"
        dotted="false"
@@ -63,13 +79,13 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-112.13647,-161.60503)"><rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:7.23527;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;stroke-width:7.23527;stroke-dasharray:none;stroke-opacity:1"
        id="rect1-5-8-5-6-1"
        width="784.49182"
        height="241.05469"
        x="115.75409"
        y="165.22266"
-       inkscape:export-filename="black-logo.png"
+       inkscape:export-filename="automatic-logo.png"
        inkscape:export-xdpi="160.4088"
        inkscape:export-ydpi="160.4088" /><g
        id="g3-6-5-4-22-3-2-5"
@@ -77,12 +93,12 @@
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.24722;stroke-dasharray:none;stroke-opacity:1"><g
          id="g2-9-3-6-3-61-5-6-9"
          transform="translate(-63.165427,8.6885308)"
-         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.24722;stroke-dasharray:none;stroke-opacity:1"><path
+         style="fill-opacity:1;stroke-width:1.24722;stroke-dasharray:none;stroke-opacity:1"><path
            d="M -9.3818454,-34.984412 H -20.824212 c -0.552285,0 -1,-0.447716 -1,-1 v -3 h -3.115947 c -0.552285,0 -1,-0.447716 -1,-1 v -4.171343 l -3.447,-1.718 c -0.538645,-0.268902 -0.719306,-0.949315 -0.385,-1.45 l 3.832,-5.75 v -1.7 c 0.0013,-6.07422 4.925783,-10.99765 11,-10.99765 6.0742161,0 10.9987046,4.92343 10.9999996,10.99765 -0.2467472,10.87342 -4.204739,9.190023 -4.3689902,13.304632 l -0.072696,5.484711 c -0.00366,0.276118 -0.1119288,0.526142 -0.2928932,0.707107 -0.1809644,0.180964 -0.4309645,0.292893 -0.7071066,0.292893 z m -10.4423666,-2 h 9.442366 l 0.11163,-5.682594 c -0.102553,-2.601106 4.5783172,-3.221492 4.3300566,-12.010667 -0.1403201,-4.967757 -4.030265,-9.093957 -8.9999996,-9.093957 -4.969734,0 -8.998829,4.028137 -9,8.997875 v 2 c -3.12e-4,0.197479 -0.05874,0.390499 -0.168,0.555 l -3.372,5.057 2.987,1.493 c 0.339052,0.169425 0.553177,0.515974 0.553,0.895 v 3.789343 h 3.115947 c 0.552285,0 1,0.447715 1,1 z"
            id="path1-5-94-2-1-0-6-1-4"
-           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.24722;stroke-dasharray:none;stroke-opacity:1"
+           style="fill-opacity:1;stroke:none;stroke-width:1.24722;stroke-dasharray:none;stroke-opacity:1"
            sodipodi:nodetypes="ssscsscccccsccssscccsscccccccssc" /></g></g><circle
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:8.27768;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;stroke-width:8.27768;stroke-dasharray:none;stroke-opacity:1"
        id="path3-6-9-9-7-0"
        cx="236.36807"
        cy="286.07687"
@@ -97,7 +113,7 @@
        id="text4-3-2-7-3-7-5-0-7"
        transform="scale(0.9654736,1.0357611)"
        aria-label="HUMANMADEMARK.COM" /><path
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:8.78767;stroke-dasharray:none;stroke-opacity:1"
+       style="fill-opacity:1;stroke-width:8.78767;stroke-dasharray:none;stroke-opacity:1"
        d="m 343.6367,302.42594 508.80362,9e-5 h 9.5338"
        id="path4-1-1-9-3-1" /><g
        id="g3"
