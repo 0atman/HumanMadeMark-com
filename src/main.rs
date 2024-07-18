@@ -204,7 +204,7 @@ fn index() -> Node {
                 </a>
             </li>
 
-            <h3 class="text-l"><b>Automatic (respects users' Dark Mode / Light Mode preferences)</b></h3>
+            <h3 class="text-l"><b>Automatic</b></h3>
             <ul class="list-disc">
             <li>
                 <a href="automatic-logo.svg" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
