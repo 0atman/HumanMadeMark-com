@@ -76,6 +76,7 @@ fn widget() -> Node {
     }
 }
 
+#[allow(clippy::too_many_lines)]
 fn index() -> Node {
     let heading = html! {
         <div class="flex w-full justify-center">
