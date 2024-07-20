@@ -203,6 +203,7 @@ fn index() -> Node {
                     black-logo-square.svg
                 </a>
             </li>
+            </ul>
 
             <h3 class="text-l"><b>Automatic</b></h3>
             <ul class="list-disc">
@@ -216,7 +217,7 @@ fn index() -> Node {
                     automatic-logo-square.svg
                 </a>
             </li>
-        </ul>
+            </ul>
 
     };
 
