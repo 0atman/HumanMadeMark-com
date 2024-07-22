@@ -206,6 +206,44 @@ fn index() -> Node {
             </li>
         </ul>
 
+        <h3 class="text-l"><b>88x31 Buttons</b></h3>
+            <ul class="list-disc">
+            <li>
+                <a href="black-logo-88x31-animated.gif" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    black-logo-88x31-animated.gif
+                </a>
+            </li>
+            <li>
+                <a href="black-logo-88x31-flat.gif" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    black-logo-88x31-flat.gif
+                </a>
+            </li>
+            <li>
+                <a href="black-logo-88x31-shadow.gif" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    black-logo-88x31-shadow.gif
+                </a>
+            </li>
+            <li>
+                <a href="grey-logo-88x31-flat.gif" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    grey-logo-88x31-flat.gif
+                </a>
+            </li>
+            <li>
+                <a href="grey-logo-88x31-shadow.gif" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    grey-logo-88x31-shadow.gif
+                </a>
+            </li>
+            <li>
+                <a href="white-logo-88x31-flat.gif" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    white-logo-88x31-flat.gif
+                </a>
+            </li>
+            <li>
+                <a href="white-logo-88x31-shadow.gif" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    white-logo-88x31-flat.gif
+                </a>
+            </li>
+        </ul>
     };
 
     let credits = html! {
