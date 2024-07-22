@@ -204,7 +204,21 @@ fn index() -> Node {
                     black-logo-square.svg
                 </a>
             </li>
-        </ul>
+            </ul>
+
+            <h3 class="text-l"><b>Automatic</b></h3>
+            <ul class="list-disc">
+            <li>
+                <a href="automatic-logo.svg" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    automatic-logo.svg
+                </a>
+            </li>
+            <li>
+                <a href="automatic-logo-square.svg" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
+                    automatic-logo-square.svg
+                </a>
+            </li>
+            </ul>
 
         <h3 class="text-l"><b>88x31 Buttons</b></h3>
             <ul class="list-disc">
