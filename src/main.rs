@@ -323,8 +323,24 @@ fn build(pages: Router) -> Result<(), Report> {
 }
 
 fn main() -> Result<(), Report> {
-    std::fs::create_dir_all("docs")?;
-    let _ = build(vec![("docs/index.html", index)]);
-    println!("Built site OK!");
+    let dir_path = "docs";
+
+    if std::path::Path::new(dir_path).exists() {
+        println!("Directory '{dir_path}' already exists");
+    } else {
+        std::fs::create_dir_all(dir_path).map_err(|e| {
+            eprintln!("Error creating directory: {e:?}");
+            e
+        })?;
+        println!("Created directory '{dir_path}' successfully");
+    }
+
+    build(vec![("docs/index.html", index)]).map_err(|e| {
+        eprintln!("Error building site: {e:?}");
+        e
+    })?;
+
+    println!("Built site successfully.");
+
     Ok(())
 }

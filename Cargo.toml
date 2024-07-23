@@ -12,9 +12,9 @@ rstml = "*"
 unsafe_code = "forbid"
 
 [lints.clippy]
-enum_glob_use = "deny"
-pedantic = "deny"
-nursery = "deny"
+enum_glob_use = { level = "deny", priority = 1 }
+pedantic = { level = "deny", priority = -1 }
+nursery = { level = "deny", priority = -1 }
 unwrap_used = "deny"
 
 [profile.release]
