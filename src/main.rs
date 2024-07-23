@@ -254,7 +254,7 @@ fn index() -> Node {
             </li>
             <li>
                 <a href="white-logo-88x31-shadow.gif" class="underline block lg:inline-block lg:mt-0 text-black-200 hover:text-white mr-4">
-                    white-logo-88x31-flat.gif
+                    white-logo-88x31-shadow.gif
                 </a>
             </li>
         </ul>
