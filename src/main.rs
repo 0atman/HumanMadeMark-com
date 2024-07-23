@@ -323,6 +323,12 @@ fn build(pages: Router) -> Result<(), Report> {
 }
 
 fn main() -> Result<(), Report> {
+    let gate = true;
+    let num = match gate {
+        true => 1,
+        false => 0,
+    };
+
     std::fs::create_dir_all("docs")?;
     let _ = build(vec![("docs/index.html", index)]);
     println!("Built site OK!");
